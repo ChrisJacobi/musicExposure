@@ -1,0 +1,16 @@
+* {
+	text-align: center;
+	background-color: #ff6780;
+}
+
+header {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+			-ms-flex-pack: center;
+					justify-content: center;
+}
+header h1 {
+	color: rgb(158, 20, 20);
+}
