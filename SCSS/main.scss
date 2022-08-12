@@ -2,8 +2,52 @@
 
 
 * {
-    text-align: center;
-    background-color: $BG;
+	text-align: center;
+	font-family: 'Roboto Slab', serif;
 }
 
-@import "_header"
+body {
+	background-color: $BG;
+}
+
+header {
+	display: flex;
+	justify-content: center;
+	h1 {
+		color: #DDA15E;
+		font-family: 'Rubik Dirt', cursive;
+		font-size: 3rem;
+		letter-spacing: 0.20rem;
+	}
+}
+
+#mission {
+	background-image: url(/PICTURES/missionPic1.png);
+	min-height: 20rem;
+	background-size: 100%;
+	margin: 2rem;
+	border-radius: 3rem;
+	p {
+		font-family: 'DynaPuff', cursive;
+		font-weight: 600;
+		color: $BG;
+		padding: 3rem 2rem;
+		line-height: 4rem;
+		font-size: 2.5rem;
+		letter-spacing: 0.15rem;
+	}
+}
+
+.iframeContainer{
+	position: relative;
+	width: 100%;
+	padding-bottom: 56.25%; 
+	height: 0;
+  }
+.iframeContainer iframe{
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+  }
