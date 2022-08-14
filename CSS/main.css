@@ -1,3 +1,9 @@
+@media screen and (min-width: 950px) {
+  main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 * {
   font-family: "Roboto Slab", serif;
 }
@@ -6,8 +12,7 @@ body {
   background-color: #FEFAE0;
   margin: 0;
 }
-
-header {
+body header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -17,7 +22,7 @@ header {
   text-align: center;
   background-color: rgba(197, 99, 13, 0.9647058824);
 }
-header h1 {
+body header h1 {
   color: #FEFAE0;
   font-family: "Rubik Dirt", cursive;
   font-size: 3rem;
@@ -45,27 +50,28 @@ header h1 {
   margin: 2rem 2rem 0 2rem;
 }
 
-.articleTitle {
+article {
+  margin: 2rem;
+}
+article .articleTitle {
   font-size: 1.85rem;
   font-family: "Rubik Marker Hatch", cursive;
   color: rgba(197, 99, 13, 0.9647058824);
 }
-
-article {
-  margin: 2rem;
-}
-
-.iframeContainer {
+article .iframeContainer {
   position: relative;
   width: 100%;
   padding-bottom: 56.25%;
   height: 0;
 }
-
-.iframeContainer iframe {
+article .iframeContainer iframe {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+footer {
+  margin: 2rem;
 }

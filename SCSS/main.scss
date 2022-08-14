@@ -1,29 +1,31 @@
 @import "_var";
+@import "_media";
 
-
+// start document
 * {
 	font-family: 'Roboto Slab', serif;
 }
-
 body {
 	background-color: $BG;
 	margin: 0;
-}
-
-header {
-	display: flex;
-	justify-content: center;
-	text-align: center;
-	background-color: #c5630df6;
-	h1 {
-		// color: #DDA15E;
-		color: $BG;
-		font-family: 'Rubik Dirt', cursive;
-		font-size: 3rem;
-		letter-spacing: 0.20rem;
+	header {
+		display: flex;
+		justify-content: center;
+		text-align: center;
+		background-color: $headerBG;
+		h1 {
+			color: $BG;
+			font-family: 'Rubik Dirt', cursive;
+			font-size: 3rem;
+			letter-spacing: 0.20rem;
+		}
 	}
 }
+// end document
 
+
+
+// start mission statement + intro
 #mission {
 	background-image: url(/PICTURES/missionPic1.png);
 	min-height: 20rem;
@@ -44,27 +46,38 @@ header {
 #intro {
 	margin: 2rem 2rem 0 2rem;
 }
+// end mission statement + intro
 
-.articleTitle {
-	font-size: 1.85rem;
-	font-family: 'Rubik Marker Hatch', cursive;
-	color: $headerBG;
-}
 
+
+// start music articles
 article {
 	margin: 2rem;
+	.articleTitle {
+		font-size: 1.85rem;
+		font-family: 'Rubik Marker Hatch', cursive;
+		color: $headerBG;
+	}
+	.iframeContainer{
+		position: relative;
+		width: 100%;
+		padding-bottom: 56.25%; 
+		height: 0;
+		iframe {
+			position: absolute;
+			top:0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		  }
+	  }	
 }
+// end music articles
 
-.iframeContainer{
-	position: relative;
-	width: 100%;
-	padding-bottom: 56.25%; 
-	height: 0;
-  }
-.iframeContainer iframe{
-	position: absolute;
-	top:0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-  }
+
+// start footer
+footer {
+	margin: 2rem;
+}
+// end footer
+
