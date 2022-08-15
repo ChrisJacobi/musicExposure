@@ -4,6 +4,20 @@
 @media screen and (min-width: 950px) {
 	main {
 		display: grid;
-		grid-template-columns: repeat(2, 1fr)  
+		grid-template-columns: repeat(2, 1fr); 
 	}
+	#introContainer {
+		padding: 2rem 4rem 2rem 0.5rem;
+	}
+	
+
+	
+}
+
+@media screen and (min-width: 1250px) {
+	#introContainer {
+		max-width: 85rem;
+		padding-right: 10rem;
+	}
+
 }

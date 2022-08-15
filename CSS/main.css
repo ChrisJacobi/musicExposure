@@ -3,6 +3,15 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
+  #introContainer {
+    padding: 2rem 4rem 2rem 0.5rem;
+  }
+}
+@media screen and (min-width: 1250px) {
+  #introContainer {
+    max-width: 85rem;
+    padding-right: 10rem;
+  }
 }
 * {
   font-family: "Roboto Slab", serif;
@@ -30,23 +39,33 @@ body header h1 {
 }
 
 #mission {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-image: url(/PICTURES/missionPic1.png);
   min-height: 20rem;
   background-size: 100%;
 }
-#mission p {
+#mission #missionP {
   font-family: "DynaPuff", cursive;
   font-weight: 600;
   color: #FEFAE0;
   padding: 3rem 2rem;
-  line-height: 4rem;
+  line-height: 3rem;
   font-size: 2.5rem;
   letter-spacing: 0.15rem;
   text-align: center;
   margin: 0;
 }
 
-#intro {
+.intro {
   margin: 2rem 2rem 0 2rem;
 }
 
